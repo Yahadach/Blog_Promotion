@@ -15,7 +15,7 @@
 			<nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
 				<div>
 					<a href="/wordpress-5.0.3/wordpress/"><img src="/wordpress-5.0.3/wordpress/wp-content/uploads/2019/02/logo_blog2.png" height="60px" width="60px"></img></a>
-					<a id="name_promo" class="navbar-brand" href="/wordpress-5.0.3/wordpress/">Café-Inline</a>
+					<a id="name_promo" class="navbar-brand" href="/wordpress-5.0.3/wordpress">Café-Inline</a>
 				</div>
 				
 				<button id="toggle" class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,8 +24,8 @@
 
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
     				<ul id="buttons_container" class="navbar-nav mr-auto">
-        					<li><a class="nav-link" href="/wordpress-5.0.3/wordpress/">Accueil</a></li>
-							<li><a class="nav-link" href="wordpress-5.0.3/wordpress/articles/">Articles</a></li>
+        					<li><a class="nav-link" href="/wordpress-5.0.3/wordpress">Accueil</a></li>
+							<li><a class="nav-link" href="/wordpress-5.0.3/wordpress/articles">Articles</a></li>
         					<li><a class="nav-link" href="#">À propos</a></li>						
 					</ul>
 				</div>

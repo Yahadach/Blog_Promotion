@@ -318,8 +318,8 @@ html #section-welcome #promotion {
   background-repeat: no-repeat;
 }
 html #section-articles {
-  min-height: 130vh;
   background-color: #488b8f;
+  padding: 0;
 }
 html #section-articles h2 {
   font-family: "roboto";
@@ -333,6 +333,9 @@ html #section-articles #row-articles {
 html #section-articles #row-articles .article {
   height: 35vh;
   width: 35vh;
+  color: inherit;
+  /* blue colors for links too */
+  text-decoration: inherit;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -342,6 +345,12 @@ html #section-articles #row-articles .article #titreArticle h3 {
   font-size: 2vh;
   background-color: #fef7e6cc;
   font-family: "roboto";
+  padding: 1vh;
+}
+html #section-articles #row-articles .article #titreArticle h3:hover {
+  background-color: #343A40;
+  transition: background 2s;
+  color: #fef7e6;
 }
 html footer {
   height: 30vh;

@@ -71,26 +71,20 @@ Template Name: accueil
 			$recentPosts->query('showposts=6');
 		?>
 
-		<div class="container-fluid">
+
 			<div id="row-articles" class="row justify-content-center no-gutters" >
 				<!-- <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="back; background-repeat: no-repeat; background-size: cover; background-position: center;"> -->
 			<?php while ($recentPosts->have_posts()) : $recentPosts->the_post(); ?>
-				<a href="<?php the_permalink();?>">
-					<div class="article col-md-4" style="background-image:url(<?php echo get_the_post_thumbnail_url()?>); background-repeat: no-repeat; background-size: cover; background-position: center;">
-
+				<a class="article col-md-4" style="background-image:url(<?php echo get_the_post_thumbnail_url()?>); background-repeat: no-repeat; background-size: cover; background-position: center;" href="<?php the_permalink();?>">
+					
 						<div id="titreArticle">
 							<h3><?php the_title(); ?></h3>
 						</div>
-
-					</div>
 				</a>
 			<?php endwhile; ?>
 			</div>
-		</div>
 
 
 	</section>
-	<a href="wordpress-5.0.3/wordpress/articles/"><button> articles </button></a>
-	<a href="wordpress-5.0.3/wordpress/article/"><button> article </button></a>
 
 <?php get_footer(); ?>
