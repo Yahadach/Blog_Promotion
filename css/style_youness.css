@@ -1,0 +1,17 @@
+/*
+Theme Name: caféinline
+Author: Youness ahadach
+Description: Template WordPress pour le blog de la promo
+Version: 0.0.1
+Tags: jquery
+*/
+
+html {
+  margin-top: 0 !important;
+}
+html header {
+  background-color: cadetblue;
+  height: 500px;
+}
+
+/*# sourceMappingURL=style_youness.css.map */

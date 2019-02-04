@@ -1,0 +1,384 @@
+@font-face {
+  font-family: "roboto";
+  src: url("fonts/Roboto_Mono/RobotoMono-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "muli";
+  src: url("fonts/Muli/Muli-Regular.ttf") format("truetype");
+}
+html {
+  margin-top: 0 !important;
+  /********************************************************/
+  /**                     ARTICLES                      **/
+  /*******************************************************/
+  /********************************************************/
+  /*                    ARTICLE1                          */
+  /********************************************************/
+  /*******************************************************************************/
+  /***                  Les derniers articles                                 ****/
+  /*******************************************************************************/
+}
+html #header_article {
+  background-size: cover;
+  background-position: center center;
+  padding: 1em;
+  height: 65vh;
+}
+html #header_article h1 {
+  padding: 1em;
+  font-family: "roboto" !important;
+  background-color: #343A40aa;
+}
+html header {
+  background-color: #488b8f;
+  height: 65vh;
+}
+html header nav {
+  font-family: "roboto";
+}
+html header nav #name_promo {
+  margin: 1vh;
+  color: #fef7e6;
+}
+html header nav #navbarSupportedContent {
+  justify-content: flex-end;
+}
+html header nav #navbarSupportedContent #buttons_container {
+  margin-right: 0 !important;
+}
+@media screen and (max-width: 991px) {
+  html header nav #navbarSupportedContent #buttons_container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+html header nav #navbarSupportedContent #buttons_container a {
+  color: #fef7e6;
+}
+html header nav #navbarSupportedContent #buttons_container a:hover {
+  text-decoration: none;
+  border-bottom: 3px solid #488b8f;
+  margin-bottom: -3px;
+}
+html header .container-fluid {
+  padding-top: 15vh;
+}
+html header .container-fluid .col-lg-6 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+@media screen and (min-width: 320px) and (max-width: 800px) {
+  html header .container-fluid .col-lg-6 img {
+    height: 20vh;
+    width: 20vh;
+  }
+}
+html header h1 {
+  text-align: center;
+  font-size: 5vh;
+  margin-top: 6vh;
+  color: #fef7e6;
+  font-family: "roboto";
+}
+@media screen and (min-width: 320px) and (max-width: 800px) {
+  html header h1 {
+    font-size: 4vh;
+  }
+}
+html #page {
+  background-color: #488b8f;
+  height: 100vh;
+}
+html .carreblancGauche {
+  background-color: rgba(255, 255, 255, 0.8);
+  margin-right: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+  height: 250px;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  html .carreblancGauche {
+    margin-right: 0vh;
+  }
+}
+html .carreblancGauche #titreArticleG h3 {
+  margin-top: 2vh;
+  font-size: 2vh;
+}
+html .carreblancGauche .extrait p {
+  margin-right: 3vh;
+  margin-left: 3vh;
+}
+html .carreblancGauche #lireG {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+html .carreblancDroite {
+  background-color: rgba(255, 255, 255, 0.8);
+  margin-left: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+  height: 250px;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  html .carreblancDroite {
+    margin-left: 0vh;
+  }
+}
+html .carreblancDroite #titreArticleD h3 {
+  margin-top: 2vh;
+  font-size: 2vh;
+}
+html .carreblancDroite .extrait p {
+  margin-right: 3vh;
+  margin-left: 3vh;
+}
+html .carreblancDroite #lireD {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+html #article1 {
+  height: 400px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  html #article1 {
+    display: flex;
+    justify-content: center;
+  }
+}
+html #article2 {
+  height: 400px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  html #article2 {
+    display: flex;
+    justify-content: center;
+  }
+}
+html #article3 {
+  height: 400px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  html #article3 {
+    display: flex;
+    justify-content: center;
+  }
+}
+html #article4 {
+  height: 400px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  html #article4 {
+    display: flex;
+    justify-content: center;
+  }
+}
+html #article5 {
+  height: 400px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  html #article5 {
+    display: flex;
+    justify-content: center;
+  }
+}
+html main {
+  padding: 1em;
+  background-color: #fff4e3;
+  color: #343A40;
+}
+html main article.article {
+  font-family: "muli";
+  margin: 0.5em;
+  background-color: #fff4e3;
+  border-left: 2px solid #488b8f;
+  color: #343A40;
+}
+html main article.article .texte {
+  padding: 0.5em;
+}
+html main article.article .meta {
+  padding: 0.5em;
+  color: #fff4e3;
+  background-color: #488b8f;
+}
+html main article.article .meta a {
+  color: #fff4e3;
+}
+html main article.article .meta a:hover {
+  color: #fff4e3;
+}
+html main aside.list-comm div {
+  margin: 0.5em;
+  padding: 0em;
+  padding-left: 3em;
+  background-color: #fff4e3;
+  color: #343A40;
+}
+@media all and (max-width: 800px) {
+  html main aside.list-comm div {
+    padding: 0.5em !important;
+    padding-left: 1em !important;
+  }
+}
+html main aside.list-comm div img {
+  display: inline-block;
+  margin: 0.5em;
+}
+@media all and (max-width: 400px) {
+  html main aside.list-comm div img {
+    display: none !important;
+  }
+}
+html main aside.list-comm div .texte {
+  padding-left: 0;
+  font-family: "muli";
+  vertical-align: middle;
+  display: inline-block;
+}
+html main aside.list-comm div .texte .meta {
+  margin: 0;
+  margin-top: 0.15em;
+  padding: 0.15em;
+  color: #488b8f;
+}
+html main aside.list-comm div .texte .meta a {
+  color: #fff4e3;
+}
+html main aside.list-comm div .texte .meta a:hover {
+  color: #fff4e3;
+}
+html main div.comment-respond {
+  padding-left: 3em;
+  color: #343A40;
+  font-size: 1em;
+}
+html main div.comment-respond input, html main div.comment-respond textarea {
+  background-color: #fff4e3;
+  color: #343A40;
+  border: 1px solid #343A40;
+  display: block;
+}
+html main div.comment-respond input:focus, html main div.comment-respond textarea:focus {
+  border: 1px solid #488b8f;
+}
+html .title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+html #section-welcome {
+  min-height: 64vh;
+  background-color: #fef7e6;
+}
+html #section-welcome h2 {
+  font-family: "roboto";
+  font-size: 5vh;
+}
+html #section-welcome .row {
+  font-size: 2vh;
+  font-family: "muli";
+  padding-top: 6vh;
+}
+@media screen and (min-width: 320px) and (max-width: 387px) {
+  html #section-welcome .row {
+    font-size: 1.5vh;
+  }
+}
+html #section-welcome #presentation {
+  height: 38vh;
+}
+html #section-welcome #promotion {
+  background-image: url("/wordpress-5.0.3/wordpress/wp-content/uploads/2019/01/2018-12-18-IMG_5716.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+html #section-articles {
+  min-height: 130vh;
+  background-color: #488b8f;
+}
+html #section-articles h2 {
+  font-family: "roboto";
+  font-size: 5vh;
+  padding-top: 12vh;
+  color: #fef7e6;
+}
+html #section-articles #row-articles {
+  margin-top: 10vh;
+}
+html #section-articles #row-articles .article {
+  height: 35vh;
+  width: 35vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+html #section-articles #row-articles .article #titreArticle h3 {
+  width: 60%;
+  font-size: 2vh;
+  background-color: #fef7e6cc;
+  font-family: "roboto";
+}
+html footer {
+  height: 30vh;
+  background-color: #343a40;
+}
+html footer #social-medias {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10vh;
+}
+html footer #social-medias i {
+  color: #fef7e6;
+  font-size: 6vh;
+  margin: 2vh;
+}
+html footer #social-medias i:hover {
+  color: #488b8f;
+  cursor: pointer;
+}
+html footer #legal {
+  margin-top: 4.5vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+html footer #mentions {
+  margin-right: auto;
+  font-family: "roboto";
+  font-size: 1.5vh;
+  margin-bottom: 0 !important;
+  text-align: center !important;
+  color: #fef7e6;
+}
+html footer #mentions:hover {
+  color: #488b8f;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */
