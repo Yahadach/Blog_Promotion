@@ -11,12 +11,29 @@ html {
   /********************************************************/
   /**                     ARTICLES                      **/
   /*******************************************************/
+  /*
+  Theme Name: ZiTheme
+  Author: ACS
+  Description: OUI
+  Version: 0.0.1
+  Tags: bootstrap
+  */
   /********************************************************/
-  /*                    ARTICLE1                          */
+  /*                    ARTICLE                          */
   /********************************************************/
   /*******************************************************************************/
   /***                  Les derniers articles                                 ****/
   /*******************************************************************************/
+}
+html a {
+  color: inherit;
+  /* blue colors for links too */
+  text-decoration: inherit;
+}
+html a:hover {
+  color: inherit;
+  /* blue colors for links too */
+  text-decoration: inherit;
 }
 html #header_article {
   background-size: cover;
@@ -90,7 +107,8 @@ html #page {
   background-color: #488b8f;
   height: 100vh;
 }
-html .carreblancGauche {
+html .carreblancDroit {
+  position: absolute;
   background-color: rgba(255, 255, 255, 0.8);
   margin-right: 5vh;
   display: flex;
@@ -101,24 +119,29 @@ html .carreblancGauche {
   text-align: center;
 }
 @media screen and (max-width: 768px) {
-  html .carreblancGauche {
+  html .carreblancDroit {
     margin-right: 0vh;
   }
 }
-html .carreblancGauche #titreArticleG h3 {
+html .carreblancDroit #titreArticleD h3 {
   margin-top: 2vh;
-  font-size: 2vh;
+  font-size: 20px;
+  color: #343A40;
 }
-html .carreblancGauche .extrait p {
+html .carreblancDroit .extrait p {
   margin-right: 3vh;
   margin-left: 3vh;
 }
-html .carreblancGauche #lireG {
+html .carreblancDroit #lireD {
+  margin-right: 15px;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
 }
-html .carreblancDroite {
+html .carreblancDroit #lireD p {
+  color: #343A40;
+}
+html .carreblancGauche {
   background-color: rgba(255, 255, 255, 0.8);
   margin-left: 5vh;
   display: flex;
@@ -129,28 +152,71 @@ html .carreblancDroite {
   text-align: center;
 }
 @media screen and (max-width: 768px) {
-  html .carreblancDroite {
+  html .carreblancGauche {
     margin-left: 0vh;
   }
 }
-html .carreblancDroite #titreArticleD h3 {
+html .carreblancGauche #titreArticleG h3 {
   margin-top: 2vh;
-  font-size: 2vh;
+  font-size: 20px;
+  color: #343A40;
 }
-html .carreblancDroite .extrait p {
+html .carreblancGauche .extrait p {
   margin-right: 3vh;
   margin-left: 3vh;
 }
-html .carreblancDroite #lireD {
+html .carreblancGauche #lireG {
+  margin-right: 15px;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
 }
-html #article1 {
-  height: 400px;
+html .carreblancGauche #lireG a {
+  color: #343A40;
+}
+html .fondD {
+  background-color: rgba(0, 0, 0, 0.6);
+  background-size: cover;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  width: 100%;
+  height: 400px;
+}
+@media screen and (max-width: 768px) {
+  html .fondD {
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+  }
+}
+html .fondD:hover {
+  background-color: rgba(0, 0, 0, 0);
+  transition: background 1s;
+}
+html .fondG {
+  background-color: rgba(0, 0, 0, 0.6);
+  background-size: cover;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+}
+@media screen and (max-width: 768px) {
+  html .fondG {
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+  }
+}
+html .fondG:hover {
+  background-color: rgba(0, 0, 0, 0);
+  transition: background 1s;
+}
+html #article1 {
+  height: 400px;
+  padding: 0px;
 }
 @media screen and (max-width: 768px) {
   html #article1 {
@@ -160,9 +226,7 @@ html #article1 {
 }
 html #article2 {
   height: 400px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  padding: 0px;
 }
 @media screen and (max-width: 768px) {
   html #article2 {
@@ -172,9 +236,7 @@ html #article2 {
 }
 html #article3 {
   height: 400px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  padding: 0px;
 }
 @media screen and (max-width: 768px) {
   html #article3 {
@@ -184,9 +246,7 @@ html #article3 {
 }
 html #article4 {
   height: 400px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  padding: 0px;
 }
 @media screen and (max-width: 768px) {
   html #article4 {
@@ -196,12 +256,20 @@ html #article4 {
 }
 html #article5 {
   height: 400px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  padding: 0px;
 }
 @media screen and (max-width: 768px) {
   html #article5 {
+    display: flex;
+    justify-content: center;
+  }
+}
+html #article6 {
+  height: 400px;
+  padding: 0px;
+}
+@media screen and (max-width: 768px) {
+  html #article6 {
     display: flex;
     justify-content: center;
   }
@@ -307,6 +375,11 @@ html #section-welcome .row {
 @media screen and (min-width: 320px) and (max-width: 387px) {
   html #section-welcome .row {
     font-size: 1.5vh;
+  }
+}
+@media screen and (min-width: 388px) and (max-width: 768px) {
+  html #section-welcome .row {
+    font-size: 1.7vh;
   }
 }
 html #section-welcome #presentation {

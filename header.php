@@ -32,7 +32,7 @@
 			</nav>
 
 			<?php
-			if ( is_home() ) :
+			if ( is_page('accueil') ) :
 				echo"<div class='container-fluid'>
 						<div class='container'>
 							<div class='row justify-content-center'>

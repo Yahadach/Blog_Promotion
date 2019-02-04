@@ -21,7 +21,17 @@ $defpadding:1em;
 
 html{
 
-        margin-top: 0 !important;
+    margin-top: 0 !important;
+
+    a{
+        color: inherit; /* blue colors for links too */
+        text-decoration: inherit;
+    }
+
+    a:hover{
+        color: inherit; /* blue colors for links too */
+        text-decoration: inherit;
+    }
 
     #header_article{
 
@@ -105,138 +115,213 @@ html{
     /********************************************************/
     /**                     ARTICLES                      **/
     /*******************************************************/
-    #page {
-        background-color: #488b8f;
-        height: 100vh;
+    /*
+Theme Name: ZiTheme
+Author: ACS
+Description: OUI
+Version: 0.0.1
+Tags: bootstrap
+*/
+#page {
+    background-color: #488b8f;
+    height: 100vh;
+}
+
+.carreblancDroit {
+
+    position: absolute;
+
+    @media screen and (max-width: 768px) {
+        margin-right: 0vh;
     }
-    
-    .carreblancGauche {
-        @media screen and (max-width: 768px) {
-            margin-right: 0vh;
-        }
-        background-color: rgba(255, 255, 255, 0.8);
-        margin-right: 5vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 300px;
-        height: 250px;
-        text-align: center;
-    
-        #titreArticleG {
-            h3 {
-                margin-top: 2vh;
-                font-size: 2vh;
-            }
-        }
-        
-        .extrait {
-            p {
-                margin-right:3vh; 
-                margin-left:3vh;
-            }
-        }
-        
-        #lireG {
-            display: flex;
-            justify-content: flex-end;
-            align-items: flex-end;
+
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-right: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    height: 250px;
+    text-align: center;
+
+    #titreArticleD {
+        h3 {
+            margin-top: 2vh;
+            font-size: 20px;
+            color: #343A40;
         }
     }
-    
-    .carreblancDroite {
-        @media screen and (max-width: 768px) {
-            margin-left: 0vh;
-        }
-        background-color: rgba(255, 255, 255, 0.8);
-        margin-left: 5vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 300px;
-        height: 250px;
-        text-align: center;
-    
-        #titreArticleD {
-            h3 {
-                margin-top: 2vh;
-                font-size: 2vh;
-            }
-        }
-        
-        .extrait {
-            p {
-                margin-right:3vh; 
-                margin-left:3vh;
-            }
-        }
-        
-        #lireD {
-            display: flex;
-            justify-content: flex-end;
-            align-items: flex-end;
+
+    .extrait {
+        p {
+            margin-right: 3vh;
+            margin-left: 3vh;
         }
     }
-    #article1 {
-        @media screen and (max-width: 768px) {
-            display: flex;
-            justify-content: center;
-        }
-        height: 400px;
+
+    #lireD {
+        margin-right: 15px;
         display: flex;
         justify-content: flex-end;
-        align-items: center;
+        align-items: flex-end;
         
-    }
-    
-    #article2 {
-        @media screen and (max-width: 768px) {
-            display: flex;
-            justify-content: center;
+        p{
+            color: #343A40;
         }
-        height: 400px;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
     }
-    
-    #article3 {
-        @media screen and (max-width: 768px) {
-            display: flex;
-            justify-content: center;
-        }
-        height: 400px;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
+}
+
+.carreblancGauche {
+    @media screen and (max-width: 768px) {
+        margin-left: 0vh;
     }
-    
-    #article4 {
-        @media screen and (max-width: 768px) {
-            display: flex;
-            justify-content: center;
+
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-left: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    height: 250px;
+    text-align: center;
+
+    #titreArticleG {
+        h3 {
+            margin-top: 2vh;
+            font-size: 20px;
+            color: #343A40;
         }
-        height: 400px;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
     }
-    
-    #article5 {
-        @media screen and (max-width: 768px) {
-            display: flex;
-            justify-content: center;
+
+    .extrait {
+        p {
+            margin-right: 3vh;
+            margin-left: 3vh;
         }
-        height: 400px;
+    }
+
+    #lireG {
+        margin-right: 15px;
         display: flex;
         justify-content: flex-end;
-        align-items: center;
+        align-items: flex-end;
+
+        a {
+            color: #343A40;
+        }
+
     }
+}
+
+.fondD {
+
+    @media screen and (max-width: 768px) {
+        background-color: rgba(0, 0, 0, 0);
+        display: flex;
+        justify-content: center;
+    }
+
+    background-color: rgba(0, 0, 0, 0.6);
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0);
+        transition: background 1s;
+    }
+
+}
+
+.fondG {
+    @media screen and (max-width: 768px) {
+        background-color: rgba(0, 0, 0, 0);
+        display: flex;
+        justify-content: center;
+    }
+
+    background-color: rgba(0, 0, 0, 0.6);
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0);
+        transition: background 1s;
+    }
+}
+
+#article1 {
+    
+    @media screen and (max-width: 768px) {
+        display: flex;
+        justify-content: center;
+    }
+
+    height: 400px;
+    padding: 0px;
+}
+
+#article2 {
+    @media screen and (max-width: 768px) {
+        display: flex;
+        justify-content: center;
+    }
+
+    height: 400px;
+    padding: 0px;
+}
+
+#article3 {
+    @media screen and (max-width: 768px) {
+        display: flex;
+        justify-content: center;
+    }
+
+    height: 400px;
+    padding: 0px;
+}
+
+#article4 {
+    @media screen and (max-width: 768px) {
+        display: flex;
+        justify-content: center;
+    }
+
+    height: 400px;
+    padding: 0px;
+}
+
+#article5 {
+    @media screen and (max-width: 768px) {
+        display: flex;
+        justify-content: center;
+    }
+
+    height: 400px;
+    padding: 0px;
+}
+
+#article6 {
+    @media screen and (max-width: 768px) {
+        display: flex;
+        justify-content: center;
+    }
+
+    height: 400px;
+    padding: 0px;
+}
 
 
 
     /********************************************************/
-    /*                    ARTICLE1                          */
+    /*                    ARTICLE                          */
     /********************************************************/
     main {
 
@@ -354,6 +439,10 @@ html{
 
             @media screen and (min-width: 320px) and (max-width: 387px) {
                 font-size: 1.5vh;
+            }
+
+            @media screen and (min-width: 388px) and (max-width: 768px) {
+                font-size: 1.7vh;
             }
         }
 
