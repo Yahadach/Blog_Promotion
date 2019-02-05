@@ -4,9 +4,9 @@
 			<div class="container">
 				<div class="row justify-content-center"> 
 					<div id="social-medias" class="col-lg-6">
-						<i class="fab fa-twitter-square"></i>
-						<i class="fab fa-facebook-square"></i>
-						<i class="fab fa-linkedin"></i>
+						<a href="https://twitter.com/accesscodeofp?lang=fr" class="fab fa-twitter-square"></a>
+						<a href="https://fr-fr.facebook.com/AccessCodeSchool/" class="fab fa-facebook-square"></a>
+						<a href="https://www.linkedin.com/company/access-code-school/about/" class="fab fa-linkedin"></a>
 					</div>
 				</div>
 

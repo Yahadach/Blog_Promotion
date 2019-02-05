@@ -42,39 +42,54 @@
       </article>
 
       <aside class="list-comm">
+         <table>
+         <?php
+           // IMPORTER LES commentaires
+           $allcomment = get_comments();
+           foreach($allcomment as $comment){
+             // Ne garder que les commentaires de l'article affiché
+             if ($comment->comment_post_ID == $data->ID){
+               ?>
+               <tr class="comm-unique">
 
-        <?php
-          // IMPORTER LES commentaires
-          $allcomment = get_comments();
-          foreach($allcomment as $comment){
-            // Ne garder que les commentaires de l'article affiché
-            if ($comment->comment_post_ID == $data->ID){
-              ?>
 
-                <div class="comm-unique">
-                    <?php
-                    $com_author_obj = get_user_by('id', $data->post_author);
-                    echo get_avatar( $com_author_obj->ID, 64, $default, 'user avatar' );
-                    ?>
+                   <td>
+                     <?php
+                     $com_author_obj = get_user_by('login', $comment->comment_author);
+                     echo get_avatar( $com_author_obj->ID, 64, $default, 'user avatar' );
+                     ?>
+                   </td>
 
-                  <div class="texte">
-                    <?php
-                    echo $comment ->comment_content;
-                    ?>
+                   <td>
+                     <div class="texte">
+                       <?php
+                       echo $comment ->comment_content;
+                       ?>
+                     </div>
 
-                    <div class="meta">
-                      Author : <?php echo $comment ->comment_author;  ?>
-                      | Date : <?php echo $comment->comment_date;  ?>
+                       <div class="meta">
+                         Author : <?php echo $comment ->comment_author;  ?>
+                         | Date : <?php echo $comment->comment_date;  ?>
+                         <?php
+                         if (
+                           is_user_logged_in()
+                           && get_user_by('login', $comment ->comment_author) == get_current_user_id()
+                         ){
+                           ?>
+                           | <?php edit_comment_link('Éditer');
+                         }
+                         ?>
+                     </div>
+                   </td>
 
-                    </div>
-                  </div>
-                </div>
+                </tr>
 
-              <?php
-            }
-          }
-        ?>
-      </aside>
+               <?php
+             }
+           }
+         ?>
+       </table>
+       </aside>
 
       <div class="postCommentForm">
       <?php

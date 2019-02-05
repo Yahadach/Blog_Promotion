@@ -1,6 +1,6 @@
 @font-face {
-    font-family: "roboto";
-    src: url("fonts/Roboto_Mono/RobotoMono-Regular.ttf") format("truetype");
+    font-family: "josefin";
+    src: url("fonts/Josefin_Sans/JosefinSans-Regular.ttf") format("truetype");
 }
 
     @font-face {
@@ -42,7 +42,7 @@ html{
 
         h1{
             padding:1em;
-            font-family: 'roboto' !important;
+            font-family: 'josefin' !important;
             background-color: $color-darker+aa;
         }
     }
@@ -53,7 +53,7 @@ html{
         height: 65vh;
 
         nav{
-            font-family: "roboto";
+            font-family: "josefin";
 
             #name_promo{
                 margin: 1vh;
@@ -105,7 +105,7 @@ html{
             font-size: 5vh;
             margin-top: 6vh;
             color: #fef7e6;
-            font-family: "roboto";
+            font-family: "josefin";
 
             @media screen and (min-width: 320px) and (max-width: 800px) {
                 font-size: 4vh;
@@ -115,13 +115,7 @@ html{
     /********************************************************/
     /**                     ARTICLES                      **/
     /*******************************************************/
-    /*
-Theme Name: ZiTheme
-Author: ACS
-Description: OUI
-Version: 0.0.1
-Tags: bootstrap
-*/
+    
 #page {
     background-color: #488b8f;
     height: 100vh;
@@ -148,7 +142,13 @@ Tags: bootstrap
         h3 {
             margin-top: 2vh;
             font-size: 20px;
+            font-family: "muli";
+            font-weight: bold;
             color: #343A40;
+
+            &:hover{
+                color: #488b8f;
+            }
         }
     }
 
@@ -169,6 +169,10 @@ Tags: bootstrap
             color: #343A40;
         }
     }
+
+    b:hover{
+        color: #488b8f;
+    }
 }
 
 .carreblancGauche {
@@ -188,8 +192,14 @@ Tags: bootstrap
     #titreArticleG {
         h3 {
             margin-top: 2vh;
+            font-family: "muli";
             font-size: 20px;
             color: #343A40;
+            font-weight: bold;
+
+            &:hover{
+                color: #488b8f;
+            }
         }
     }
 
@@ -210,6 +220,10 @@ Tags: bootstrap
             color: #343A40;
         }
 
+    }
+
+    b:hover{
+        color: #488b8f;
     }
 }
 
@@ -323,8 +337,8 @@ Tags: bootstrap
     /********************************************************/
     /*                    ARTICLE                          */
     /********************************************************/
+    
     main {
-
         padding:$defpadding;
         background-color:$color-lighter;
         color:$color-darker;
@@ -355,23 +369,33 @@ Tags: bootstrap
     
         aside.list-comm {
     
-          div {
-            margin:.5em;
-            padding:0em;
+          tr {
+            // border-top:1px dashed gray;
+            border-bottom:1px dashed $color-darker;
+          }
+    
+          td {
+            margin:.25em;
+            padding:1em;
             padding-left:3em;
-            background-color:$color-lighter;
             color:$color-darker;
+            transition:.25s all;
     
             @media all and (max-width: 800px){
               padding:.5em !important;
-              padding-left:1em !important;
+            }
+    
+            &:last-child {
+              padding-left:1em;
             }
     
             img{
               display: inline-block;
-              margin:.5em;
+              margin:.25em;
+              margin-bottom:0px;
               @media all and (max-width: 400px){
-                display:none !important;
+                // width:32px;
+                // height:32px;
               }
             }
     
@@ -380,19 +404,16 @@ Tags: bootstrap
               font-family: 'muli';
               vertical-align: middle;
               display:inline-block;
+              margin:0;
+              color:$color-darker;
+              background-color:$color-lighter !important;
+            }
     
-              .meta{
-                a {
-                  color:$color-lighter;
-                  &:hover{
-                    color:$color-lighter;
-                  }
-                }
-                margin:0;
-                margin-top:.15em;
-                padding : .15em;
-                color:$color-medium;
-                // background-color:$color-medium;
+            .meta{
+              color:$color-medium;
+              background-color:$color-lighter !important;
+              a {
+                color:$color-darker;
               }
             }
           }
@@ -411,11 +432,25 @@ Tags: bootstrap
             &:focus {
               border:1px solid $color-medium;
             }
+            @media all and (max-width: 580px){
+              width:300px;
+              padding:0px;
+              margin:-10px !important;
+            }
+    
+          }
+          @media all and (max-width: 800px){
+            padding-left:1em;
+          }
+          @media all and (max-width: 400px){
+            padding-left:0px;
           }
         }
     
     
       }
+
+    /*******************************************************************************/
 
     .title{
         display: flex;
@@ -428,21 +463,18 @@ Tags: bootstrap
         background-color: #fef7e6;
 
         h2{
-            font-family: "roboto";
+            font-family: "josefin";
             font-size: 5vh;
         }
 
         .row{
             font-size: 2vh;
             font-family: "muli";
-            padding-top: 6vh;
+            padding-top: 4vh;
+            padding-bottom: 6vh;
 
             @media screen and (min-width: 320px) and (max-width: 387px) {
                 font-size: 1.5vh;
-            }
-
-            @media screen and (min-width: 388px) and (max-width: 768px) {
-                font-size: 1.7vh;
             }
         }
 
@@ -465,7 +497,7 @@ Tags: bootstrap
         padding: 0;
 
         h2{
-            font-family: "roboto";
+            font-family: "josefin";
             font-size: 5vh;
             padding-top: 12vh;
             color: #fef7e6;
@@ -489,7 +521,7 @@ Tags: bootstrap
                             width: 60%;
                             font-size: 2vh;
                             background-color: #fef7e6cc;
-                            font-family: "roboto";
+                            font-family: "josefin";
                             padding: 1vh;
                         }
 
@@ -513,13 +545,13 @@ Tags: bootstrap
             justify-content: center;
             margin-top: 10vh;
 
-            i{
+            a{
                 color: #fef7e6;
                 font-size: 6vh;
                 margin: 2vh;
             }
 
-            i:hover{
+            a:hover{
                 color: #488b8f;
                 cursor: pointer;
             }
@@ -534,7 +566,7 @@ Tags: bootstrap
 
             #mentions{
                 margin-right: auto;
-                font-family: "roboto";
+                font-family: "josefin";
                 font-size: 1.5vh;
                 margin-bottom: 0 !important;
                 text-align: center !important;

@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "roboto";
-  src: url("fonts/Roboto_Mono/RobotoMono-Regular.ttf") format("truetype");
+  font-family: "josefin";
+  src: url("fonts/Josefin_Sans/JosefinSans-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "muli";
@@ -11,16 +11,10 @@ html {
   /********************************************************/
   /**                     ARTICLES                      **/
   /*******************************************************/
-  /*
-  Theme Name: ZiTheme
-  Author: ACS
-  Description: OUI
-  Version: 0.0.1
-  Tags: bootstrap
-  */
   /********************************************************/
   /*                    ARTICLE                          */
   /********************************************************/
+  /*******************************************************************************/
   /*******************************************************************************/
   /***                  Les derniers articles                                 ****/
   /*******************************************************************************/
@@ -43,7 +37,7 @@ html #header_article {
 }
 html #header_article h1 {
   padding: 1em;
-  font-family: "roboto" !important;
+  font-family: "josefin" !important;
   background-color: #343A40aa;
 }
 html header {
@@ -51,7 +45,7 @@ html header {
   height: 65vh;
 }
 html header nav {
-  font-family: "roboto";
+  font-family: "josefin";
 }
 html header nav #name_promo {
   margin: 1vh;
@@ -96,7 +90,7 @@ html header h1 {
   font-size: 5vh;
   margin-top: 6vh;
   color: #fef7e6;
-  font-family: "roboto";
+  font-family: "josefin";
 }
 @media screen and (min-width: 320px) and (max-width: 800px) {
   html header h1 {
@@ -126,7 +120,12 @@ html .carreblancDroit {
 html .carreblancDroit #titreArticleD h3 {
   margin-top: 2vh;
   font-size: 20px;
+  font-family: "muli";
+  font-weight: bold;
   color: #343A40;
+}
+html .carreblancDroit #titreArticleD h3:hover {
+  color: #488b8f;
 }
 html .carreblancDroit .extrait p {
   margin-right: 3vh;
@@ -140,6 +139,9 @@ html .carreblancDroit #lireD {
 }
 html .carreblancDroit #lireD p {
   color: #343A40;
+}
+html .carreblancDroit b:hover {
+  color: #488b8f;
 }
 html .carreblancGauche {
   background-color: rgba(255, 255, 255, 0.8);
@@ -158,8 +160,13 @@ html .carreblancGauche {
 }
 html .carreblancGauche #titreArticleG h3 {
   margin-top: 2vh;
+  font-family: "muli";
   font-size: 20px;
   color: #343A40;
+  font-weight: bold;
+}
+html .carreblancGauche #titreArticleG h3:hover {
+  color: #488b8f;
 }
 html .carreblancGauche .extrait p {
   margin-right: 3vh;
@@ -173,6 +180,9 @@ html .carreblancGauche #lireG {
 }
 html .carreblancGauche #lireG a {
   color: #343A40;
+}
+html .carreblancGauche b:hover {
+  color: #488b8f;
 }
 html .fondD {
   background-color: rgba(0, 0, 0, 0.6);
@@ -300,45 +310,44 @@ html main article.article .meta a {
 html main article.article .meta a:hover {
   color: #fff4e3;
 }
-html main aside.list-comm div {
-  margin: 0.5em;
-  padding: 0em;
+html main aside.list-comm tr {
+  border-bottom: 1px dashed #343A40;
+}
+html main aside.list-comm td {
+  margin: 0.25em;
+  padding: 1em;
   padding-left: 3em;
-  background-color: #fff4e3;
   color: #343A40;
+  transition: 0.25s all;
 }
 @media all and (max-width: 800px) {
-  html main aside.list-comm div {
+  html main aside.list-comm td {
     padding: 0.5em !important;
-    padding-left: 1em !important;
   }
 }
-html main aside.list-comm div img {
+html main aside.list-comm td:last-child {
+  padding-left: 1em;
+}
+html main aside.list-comm td img {
   display: inline-block;
-  margin: 0.5em;
+  margin: 0.25em;
+  margin-bottom: 0px;
 }
-@media all and (max-width: 400px) {
-  html main aside.list-comm div img {
-    display: none !important;
-  }
-}
-html main aside.list-comm div .texte {
+html main aside.list-comm td .texte {
   padding-left: 0;
   font-family: "muli";
   vertical-align: middle;
   display: inline-block;
-}
-html main aside.list-comm div .texte .meta {
   margin: 0;
-  margin-top: 0.15em;
-  padding: 0.15em;
+  color: #343A40;
+  background-color: #fff4e3 !important;
+}
+html main aside.list-comm td .meta {
   color: #488b8f;
+  background-color: #fff4e3 !important;
 }
-html main aside.list-comm div .texte .meta a {
-  color: #fff4e3;
-}
-html main aside.list-comm div .texte .meta a:hover {
-  color: #fff4e3;
+html main aside.list-comm td .meta a {
+  color: #343A40;
 }
 html main div.comment-respond {
   padding-left: 3em;
@@ -354,6 +363,23 @@ html main div.comment-respond input, html main div.comment-respond textarea {
 html main div.comment-respond input:focus, html main div.comment-respond textarea:focus {
   border: 1px solid #488b8f;
 }
+@media all and (max-width: 580px) {
+  html main div.comment-respond input, html main div.comment-respond textarea {
+    width: 300px;
+    padding: 0px;
+    margin: -10px !important;
+  }
+}
+@media all and (max-width: 800px) {
+  html main div.comment-respond {
+    padding-left: 1em;
+  }
+}
+@media all and (max-width: 400px) {
+  html main div.comment-respond {
+    padding-left: 0px;
+  }
+}
 html .title {
   display: flex;
   flex-direction: row;
@@ -364,22 +390,18 @@ html #section-welcome {
   background-color: #fef7e6;
 }
 html #section-welcome h2 {
-  font-family: "roboto";
+  font-family: "josefin";
   font-size: 5vh;
 }
 html #section-welcome .row {
   font-size: 2vh;
   font-family: "muli";
-  padding-top: 6vh;
+  padding-top: 4vh;
+  padding-bottom: 6vh;
 }
 @media screen and (min-width: 320px) and (max-width: 387px) {
   html #section-welcome .row {
     font-size: 1.5vh;
-  }
-}
-@media screen and (min-width: 388px) and (max-width: 768px) {
-  html #section-welcome .row {
-    font-size: 1.7vh;
   }
 }
 html #section-welcome #presentation {
@@ -395,7 +417,7 @@ html #section-articles {
   padding: 0;
 }
 html #section-articles h2 {
-  font-family: "roboto";
+  font-family: "josefin";
   font-size: 5vh;
   padding-top: 12vh;
   color: #fef7e6;
@@ -417,7 +439,7 @@ html #section-articles #row-articles .article #titreArticle h3 {
   width: 60%;
   font-size: 2vh;
   background-color: #fef7e6cc;
-  font-family: "roboto";
+  font-family: "josefin";
   padding: 1vh;
 }
 html #section-articles #row-articles .article #titreArticle h3:hover {
@@ -435,12 +457,12 @@ html footer #social-medias {
   justify-content: center;
   margin-top: 10vh;
 }
-html footer #social-medias i {
+html footer #social-medias a {
   color: #fef7e6;
   font-size: 6vh;
   margin: 2vh;
 }
-html footer #social-medias i:hover {
+html footer #social-medias a:hover {
   color: #488b8f;
   cursor: pointer;
 }
@@ -452,7 +474,7 @@ html footer #legal {
 }
 html footer #mentions {
   margin-right: auto;
-  font-family: "roboto";
+  font-family: "josefin";
   font-size: 1.5vh;
   margin-bottom: 0 !important;
   text-align: center !important;

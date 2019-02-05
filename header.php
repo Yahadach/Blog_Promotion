@@ -5,6 +5,22 @@
 <head>
 	<meta charset="UTF_8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Café-Inline</title>
+    <meta name="description" content="Le blog de la promotion Café-Inline avec ses articles" />
+    <meta name="keywords" content="web, articles, développement, informatique, programmation, café" />
+
+    <meta property="og:title" content=Café-Inline />
+    <meta property="og:type" content="web blog" />
+    <meta property="og:image" content="img/logo_blog.png" />
+    <meta property="og:site_name" content="Adrien, Youness, Lucas" />
+
+    <meta name=”twitter:card” content=”summary” />
+    <meta name=”twitter:site” content=”@yoursite” />
+    <meta name=”twitter:title” content=”Café-Inline” />
+    <meta name=”twitter:description” content=”web blog” />
+	<meta name=”twitter:image” content=”img/logo_blog.png” />
+	
+	<link rel="icon" href="img/logo_blog.png" />
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 	<?php wp_head(); ?>
 </head>
