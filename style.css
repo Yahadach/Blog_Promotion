@@ -11,9 +11,14 @@ html {
   /********************************************************/
   /**                     ARTICLES                      **/
   /*******************************************************/
+  /****************************************************************/
+  /***                      promotion                          ***/
+  /***************************************************************/
   /********************************************************/
   /*                    ARTICLE                          */
   /********************************************************/
+  /******************************************************************************/
+  /**                            Projets                                       **/
   /*******************************************************************************/
   /*******************************************************************************/
   /***                  Les derniers articles                                 ****/
@@ -37,6 +42,7 @@ html #header_article {
 }
 html #header_article h1 {
   padding: 1em;
+  margin-top: 20vh;
   font-family: "josefin" !important;
   background-color: #343A40aa;
 }
@@ -45,10 +51,11 @@ html header {
   height: 65vh;
 }
 html header nav {
+  font-size: 2.5vh;
   font-family: "josefin";
 }
 html header nav #name_promo {
-  margin: 1vh;
+  margin: 2vh;
   color: #fef7e6;
 }
 html header nav #navbarSupportedContent {
@@ -65,11 +72,24 @@ html header nav #navbarSupportedContent #buttons_container {
 }
 html header nav #navbarSupportedContent #buttons_container a {
   color: #fef7e6;
+  margin-left: 0.5vh;
+  margin-right: 0.5vh;
 }
 html header nav #navbarSupportedContent #buttons_container a:hover {
   text-decoration: none;
   border-bottom: 3px solid #488b8f;
   margin-bottom: -3px;
+}
+html header nav #navbarSupportedContent #buttons_container p {
+  color: #fef7e6;
+  font-weight: bold;
+  font-size: 2vh;
+  margin-top: 1vh;
+}
+@media screen and (max-width: 991px) {
+  html header nav #navbarSupportedContent #buttons_container p {
+    display: none;
+  }
 }
 html header .container-fluid {
   padding-top: 15vh;
@@ -88,7 +108,7 @@ html header .container-fluid .col-lg-6 {
 html header h1 {
   text-align: center;
   font-size: 5vh;
-  margin-top: 6vh;
+  margin-top: 5vh;
   color: #fef7e6;
   font-family: "josefin";
 }
@@ -186,7 +206,7 @@ html .carreblancGauche b:hover {
 }
 html .fondD {
   background-color: rgba(0, 0, 0, 0.6);
-  background-size: cover;
+  background-size: contain;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -206,7 +226,7 @@ html .fondD:hover {
 }
 html .fondG {
   background-color: rgba(0, 0, 0, 0.6);
-  background-size: cover;
+  background-size: contain;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -284,15 +304,155 @@ html #article6 {
     justify-content: center;
   }
 }
+html #equipe {
+  background-color: crimson;
+}
+@media screen and (max-width: 457px) {
+  html #equipe #test {
+    margin-left: 15%;
+  }
+}
+@media screen and (max-width: 574px) and (min-width: 457px) {
+  html #equipe #test {
+    margin-left: 20%;
+  }
+}
+html #equipe #img1 {
+  height: 50vh;
+  background-image: url(uploads/2019/02/adrien-684x1024.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 1vh;
+}
+html #equipe #img1:hover {
+  background-image: url(uploads/2019/02/adrien3.jpg);
+  transition: background 1s;
+}
+html #equipe #img2 {
+  height: 50vh;
+  background-image: url(uploads/2019/02/lucas-684x1024.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 1vh;
+}
+html #equipe #img2:hover {
+  background-image: url(uploads/2019/02/lucas3.jpg);
+  transition: background 1s;
+}
+html #equipe #img3 {
+  height: 50vh;
+  background-image: url(uploads/2019/02/edouard-684x1024.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 1vh;
+}
+html #equipe #img3:hover {
+  background-image: url(uploads/2019/02/edouard3.jpg);
+  transition: background 1s;
+}
+html #equipe #img4 {
+  height: 50vh;
+  background-image: url(uploads/2019/02/coralie-684x1024.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 1vh;
+}
+html #equipe #img4:hover {
+  background-image: url(uploads/2019/02/coralie3.jpg);
+  transition: background 1s;
+}
+html #equipe #img5 {
+  height: 750px;
+  background-image: url(uploads/2019/02/ghis-684x1024.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+html #equipe #img5:hover {
+  background-image: url(uploads/2019/02/ghis3.jpg);
+  transition: background 1s;
+}
+html #equipe #img6 {
+  height: 750px;
+  background-image: url(uploads/2019/02/grounese-684x1024.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 2vh;
+}
+html #equipe #img6:hover {
+  background-image: url(uploads/2019/02/youns3.jpg);
+  transition: background 1s;
+}
+html #equipe #img7 {
+  height: 750px;
+  background-image: url(uploads/2019/02/john-684x1024.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 2vh;
+}
+html #equipe #img7:hover {
+  background-image: url(uploads/2019/02/john3.jpg);
+  transition: background 1s;
+}
+html #equipe #img8 {
+  height: 750px;
+  background-image: url(uploads/2019/02/aurelien-684x1024.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 2vh;
+}
+html #equipe #img8:hover {
+  background-image: url(uploads/2019/02/aurelien3.jpg);
+  transition: background 1s;
+}
+html #equipe #row3 {
+  display: flex;
+  justify-content: space-between;
+}
+html #equipe #row3 #img9 {
+  height: 750px;
+  background-image: url(uploads/2019/02/marieange-684x1024.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 2vh;
+}
+html #equipe #row3 #img9:hover {
+  background-image: url(uploads/2019/02/marieange3.jpg);
+  transition: background 1s;
+}
+html #equipe #row3 #img10 {
+  height: 750px;
+  background-image: url(uploads/2019/02/yohann-684x1024.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 2vh;
+}
+html #equipe #row3 #img10:hover {
+  background-image: url(uploads/2019/02/yohann3.jpg);
+  transition: background 1s;
+}
+html #equipe #row3 #img12 {
+  height: 750px;
+  background-image: url(uploads/2019/02/sandra-684x1024.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 2vh;
+}
+html #equipe #row3 #img12:hover {
+  background-image: url(uploads/2019/02/sandra3.jpg);
+  transition: background 1s;
+}
 html main {
   padding: 1em;
-  background-color: #fff4e3;
+  background-color: #fef7e6;
   color: #343A40;
+}
+html main a:hover {
+  color: #488b8f;
 }
 html main article.article {
   font-family: "muli";
   margin: 0.5em;
-  background-color: #fff4e3;
+  background-color: #fef7e6;
   border-left: 2px solid #488b8f;
   color: #343A40;
 }
@@ -301,14 +461,14 @@ html main article.article .texte {
 }
 html main article.article .meta {
   padding: 0.5em;
-  color: #fff4e3;
+  color: #fef7e6;
   background-color: #488b8f;
 }
 html main article.article .meta a {
-  color: #fff4e3;
+  color: #fef7e6;
 }
 html main article.article .meta a:hover {
-  color: #fff4e3;
+  color: #fef7e6;
 }
 html main aside.list-comm tr {
   border-bottom: 1px dashed #343A40;
@@ -340,11 +500,11 @@ html main aside.list-comm td .texte {
   display: inline-block;
   margin: 0;
   color: #343A40;
-  background-color: #fff4e3 !important;
+  background-color: #fef7e6 !important;
 }
 html main aside.list-comm td .meta {
   color: #488b8f;
-  background-color: #fff4e3 !important;
+  background-color: #fef7e6 !important;
 }
 html main aside.list-comm td .meta a {
   color: #343A40;
@@ -354,17 +514,20 @@ html main div.comment-respond {
   color: #343A40;
   font-size: 1em;
 }
-html main div.comment-respond input, html main div.comment-respond textarea {
-  background-color: #fff4e3;
+html main div.comment-respond input,
+html main div.comment-respond textarea {
+  background-color: #fef7e6;
   color: #343A40;
   border: 1px solid #343A40;
   display: block;
 }
-html main div.comment-respond input:focus, html main div.comment-respond textarea:focus {
+html main div.comment-respond input:focus,
+html main div.comment-respond textarea:focus {
   border: 1px solid #488b8f;
 }
 @media all and (max-width: 580px) {
-  html main div.comment-respond input, html main div.comment-respond textarea {
+  html main div.comment-respond input,
+html main div.comment-respond textarea {
     width: 300px;
     padding: 0px;
     margin: -10px !important;
@@ -380,47 +543,129 @@ html main div.comment-respond input:focus, html main div.comment-respond textare
     padding-left: 0px;
   }
 }
+html * #main-projets {
+  padding: 0px !important;
+  font-family: "josefin";
+}
+html * #main-projets .projet_thumbnail {
+  background-size: cover;
+  background-position: center center;
+}
+html * #main-projets .projet_thumbnail .zoneTexte {
+  margin: 0px;
+  padding: 0px;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: 1s background;
+}
+html * #main-projets .projet_thumbnail .zoneTexte h3 {
+  margin: 0px;
+  padding: 1em;
+  padding-top: 6em;
+  font-weight: bolder;
+  display: inline-block;
+  background-color: #343A40;
+  transition: 1s all;
+  transform: rotate(-90deg);
+  color: #fef7e6;
+}
+html * #main-projets .projet_thumbnail .zoneTexte:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: 1s background;
+  padding: 2em;
+}
+html * #main-projets .projet_thumbnail .zoneTexte:hover h3 {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #343A40;
+  padding-top: 12em;
+  padding-bottom: 2em;
+  transition: 1s all;
+  transform: rotate(0deg);
+}
 html .title {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 html #section-welcome {
-  min-height: 64vh;
+  padding: 0;
+  height: 64vh;
   background-color: #fef7e6;
+}
+@media screen and (max-width: 991px) {
+  html #section-welcome {
+    height: 58vh;
+  }
 }
 html #section-welcome h2 {
   font-family: "josefin";
+  color: #343A40;
   font-size: 5vh;
 }
-html #section-welcome .row {
+html #section-welcome #row-presentation {
   font-size: 2vh;
   font-family: "muli";
-  padding-top: 4vh;
-  padding-bottom: 6vh;
+  padding-top: 5vh;
 }
-@media screen and (min-width: 320px) and (max-width: 387px) {
-  html #section-welcome .row {
-    font-size: 1.5vh;
+@media screen and (min-width: 455px) and (max-width: 767px) {
+  html #section-welcome #row-presentation {
+    font-size: 1.7vh;
   }
+}
+@media screen and (min-width: 350px) and (max-width: 455px) {
+  html #section-welcome #row-presentation {
+    font-size: 1.45vh;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 350px) {
+  html #section-welcome #row-presentation {
+    font-size: 1.25vh;
+  }
+}
+html #section-welcome #container-title {
+  padding: 0;
+  margin: 0;
+}
+html #section-welcome #container-title #row-title {
+  padding-top: 6vh;
+}
+html #section-welcome #container-title #row-title .title {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+html #section-welcome #container-title #row-title .title h2 {
+  background-color: #488c8f;
+  color: #fef7e6;
+  padding: 2vh;
 }
 html #section-welcome #presentation {
   height: 38vh;
 }
 html #section-welcome #promotion {
-  background-image: url("/wordpress-5.0.3/wordpress/wp-content/uploads/2019/01/2018-12-18-IMG_5716.jpg");
-  background-size: cover;
+  background-image: url("/wordpress-5.0.3/wordpress/wp-content/uploads/2019/02/2018-12-18-IMG_5716.jpg");
+  background-size: contain;
   background-repeat: no-repeat;
 }
 html #section-articles {
   background-color: #488b8f;
   padding: 0;
 }
-html #section-articles h2 {
+html #section-articles #row-articles-title {
+  margin: 0 !important;
+}
+html #section-articles #row-articles-title #col-articles-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  padding: 0;
+}
+html #section-articles #row-articles-title #col-articles-title h2 {
   font-family: "josefin";
   font-size: 5vh;
-  padding-top: 12vh;
-  color: #fef7e6;
+  margin-top: 12vh;
+  padding: 2vh;
+  color: #488c8f;
+  background-color: #fef7e6;
 }
 html #section-articles #row-articles {
   margin-top: 10vh;
@@ -440,11 +685,11 @@ html #section-articles #row-articles .article #titreArticle h3 {
   font-size: 2vh;
   background-color: #fef7e6cc;
   font-family: "josefin";
-  padding: 1vh;
+  padding: 2vh;
 }
 html #section-articles #row-articles .article #titreArticle h3:hover {
   background-color: #343A40;
-  transition: background 2s;
+  transition: background 0.5s;
   color: #fef7e6;
 }
 html footer {

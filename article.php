@@ -1,4 +1,5 @@
-<main>
+<main class="container-fluid">
+  <div class="container">
 
     <?php
       // Aller chercher les articles
@@ -96,5 +97,5 @@
         comment_form();
       ?>
       </div>
-
+          </div>
   </main>

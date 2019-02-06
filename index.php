@@ -25,20 +25,38 @@ Template Name: accueil
 			exit();
 		}
 
+		if (is_page('projets')){
+			include 'projets.php';
+			get_footer();
+			exit();
+		  }
+
+		  if (is_page('promotion')){
+			include 'promotion.php';
+			get_footer();
+			exit();
+		  }
+
+		  if (is_page('mentions')){
+			include 'mentions.php';
+			get_footer();
+			exit();
+		  }
+
 	?>
 	<!------------------------------------------------------>
 
 	<section id="section-welcome" class="container-fluid">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-6 title">
+		<div id="container-title" class="container">
+			<div id="row-title" class="row no-gutters">
+				<div class="col-lg-6 title no-gutters">
 					<h2> Bienvenue à vous! </h2>
 				</div>
 			</div>
 		</div>
 
 		<div class="container">
-			<div class="row justify-content-center">
+			<div id="row-presentation" class="row justify-content-center">
 				<div id="presentation" class="col-lg-6">
 					<p>Café-inline, c’est 10 apprentis développeurs web,<br> du talent et beaucoup de café.</p><br>
 
@@ -58,13 +76,11 @@ Template Name: accueil
 	<!-------------- Les derniers articles ---------------->
 
 	<section id="section-articles" class="container-fluid">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-8 title">
+			<div id="row-articles-title" class="row">
+				<div id="col-articles-title" class="col-lg-8 title">
 					<h2> Nos derniers articles </2>
 				</div>
 			</div>
-		</div>
 
 		<?php 
 			$recentPosts = new WP_Query();

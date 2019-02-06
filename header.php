@@ -40,9 +40,11 @@
 
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
     				<ul id="buttons_container" class="navbar-nav mr-auto">
-        					<li><a class="nav-link" href="/wordpress-5.0.3/wordpress">Accueil</a></li>
-							<li><a class="nav-link" href="/wordpress-5.0.3/wordpress/articles">Articles</a></li>
-        					<li><a class="nav-link" href="#">À propos</a></li>						
+						<li><a class="nav-link" href="/wordpress-5.0.3/wordpress">Accueil</a></li>
+						<p>|</p>
+						<li><a class="nav-link" href="/wordpress-5.0.3/wordpress/articles">Articles</a></li>
+						<p>|</p>
+						<li><a class="nav-link" href="/wordpress-5.0.3/wordpress/projets">Les projets</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -86,6 +88,32 @@
 					</div>
 				</div>
 			</div>";
+
+			elseif( is_page('projets') ) :
+
+				echo"<div class='container-fluid'>
+				<div class='container'>
+					<div class='row justify-content-center'>
+						<div class='col-lg-6'>
+							<img src='/wordpress-5.0.3/wordpress/wp-content/uploads/2019/02/logo_blog2.png' height='200px' width='200px'></img>
+						</div>
+					</div>
+				</div>
+			</div>
+		<h1> Nos projets </h1>";
+
+		elseif( is_page('promotion') ) :
+
+			echo"<div class='container-fluid'>
+			<div class='container'>
+				<div class='row justify-content-center'>
+					<div class='col-lg-6'>
+						<img src='/wordpress-5.0.3/wordpress/wp-content/uploads/2019/02/logo_blog2.png' height='200px' width='200px'></img>
+					</div>
+				</div>
+			</div>
+		</div>
+	<h1> Notre promotion </h1>";
 			
 			elseif( is_404() ) :
 				get_header( '404' );

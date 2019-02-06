@@ -12,7 +12,7 @@
 
 				<div class="row justify-content-center">
 					<div id="legal" class="col-lg-6">
-						<strong><a id="mentions"> Mentions légales </a></strong>
+						<strong><a href="mentions.html" id="mentions"> Mentions légales </a></strong>
 					</div>
 				</div>
 			</div>
